@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.title {
+  width: 548px;
+  height: 119px;
+  position: relative;
+  top: 400px;
+  left: 150px;
+  background: transparent url(../title.png) no-repeat top left;
+}
+
+a.back {
+  background: transparent url(../back.png) no-repeat top left;
+  position: fixed;
+  width: 150px;
+  height: 27px;
+  outline: none;
+  bottom: 0px;
+  left: 0px;
+}
+
+#content {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  background: #fff url(../images/bg.png) no-repeat top left;
+}
+
+#loading {
+  width: 100px;
+  height: 20px;
+  background: #A0DB0E;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#loading div {
+  width: 1px;
+  height: 20px;
+  background: #F1FF4D;
+}
+
+
+/* remember to define focus styles! */
+
+:focus {
+  outline: 0;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navigation {
+  margin: 0px auto;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+}
+
+.navigation .item {
+  position: relative;
+}
+
+.user {
+  top: 125px;
+  left: 110px;
+}
+
+.home {
+  top: 50px;
+  left: 360px;
+}
+
+.shop {
+  top: 90px;
+  left: 625px;
+}
+
+.camera {
+  top: 230px;
+  left: 835px;
+}
+
+.fav {
+  top: 420px;
+  left: 950px;
+}
+
+a.icon {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.user a.icon {
+  background: transparent url(../images/user.png) no-repeat 0px 0px;
+}
+
+.home a.icon {
+  background: transparent url(../images/home.png) no-repeat 0px 0px;
+}
+
+.shop a.icon {
+  background: transparent url(../images/shop.png) no-repeat 0px 0px;
+}
+
+.camera a.icon {
+  background: transparent url(../images/camera.png) no-repeat 0px 0px;
+}
+
+.fav a.icon {
+  background: transparent url(../images/fav.png) no-repeat 0px 0px;
+}
+
+.navigation .item a.active {
+  background-position: 0px -52px;
+}
+
+.item img.circle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 52px;
+  height: 52px;
+  opacity: 0.1;
+}
+
+.item h2 {
+  position: absolute;
+  width: 147px;
+  height: 52px;
+  color: #222;
+  font-size: 18px;
+  top: 0px;
+  left: 52px;
+  text-indent: 10px;
+  line-height: 52px;
+  text-shadow: 1px 1px 1px #fff;
+  text-transform: uppercase;
+}
+
+.item h2.active {
+  color: #fff;
+  text-shadow: 1px 0px 1px #555;
+}
+
+.item ul {
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  display: none;
+}
+
+.item ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #222;
+  padding: 3px;
+  float: left;
+  clear: both;
+  width: 100px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.item ul li a:hover {
+  background-color: #fff;
+  color: #444;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 4px #666;
+  -webkit-box-shadow: 1px 1px 4px #666;
+  box-shadow: 1px 1px 4px #666;
+}
+
+
+/* Overlay */
+
+#contact-overlay {
+  background-color: #000;
+  cursor: wait;
+}
+
+
+/* Container */
+
+#contact-container {
+  font: 16px/22px 'Trebuchet MS', Verdana, Arial;
+  text-align: left;
+  width: 450px;
+}
+
+#contact-container .contact-content {
+  background-color: #333;
+  color: #ddd;
+  height: 40px;
+}
+
+#contact-container h1 {
+  color: #d76300;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 0 6px 12px;
+  text-align: left;
+}
+
+#contact-container .contact-loading {
+  background: url(../img/contact/loading.gif) no-repeat;
+  height: 55px;
+  margin: -14px 0 0 190px;
+  padding: 0;
+  position: absolute;
+  width: 54px;
+  z-index: 8000;
+}
+
+#contact-container .contact-message {
+  text-align: center;
+}
+
+#contact-container .contact-error {
+  background: #000;
+  border: 2px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0 auto;
+  padding: 2px;
+  width: 92%;
+}
+
+#contact-container br {
+  clear: both;
+}
+
+#contact-container form {
+  margin: 0;
+  padding: 0;
+}
+
+#contact-container label {
+  clear: left;
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding-right: 4px;
+  text-align: right;
+  width: 100px;
+}
+
+#contact-container .contact-input {
+  background: #eee;
+  border: 1px solid #fff;
+  font-family: 'Trebuchet MS', Verdana, Arial;
+  float: left;
+  padding: 2px;
+  margin: 2px;
+  width: 300px;
+}
+
+#contact-container textarea {
+  height: 114px;
+}
+
+#contact-container .contact-cc {
+  cursor: default;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+#contact-container .contact-top {
+  background-color: #333;
+  height: 13px;
+  margin: 0;
+  padding: 0;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+#contact-container .contact-bottom {
+  background-color: #333;
+  font-size: 12px;
+  height: 13px;
+  line-height: 12px;
+  text-align: center;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-radius: 0 0 8px 8px;
+}
+
+#contact-container .contact-bottom a,
+#contact-container .contact-bottom a:link,
+#contact-container .contact-bottom a:active,
+#contact-container .contact-bottom a:visited {
+  color: #666;
+  position: relative;
+  top: -4px;
+  text-decoration: none;
+}
+
+#contact-container .contact-bottom a:hover {
+  color: #888;
+}
+
+#contact-container .contact-button {
+  background: #d76300;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 26px;
+  margin: 4px 0 0 4px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+#contact-container .contact-button:hover {
+  background: #f49000;
+}
+
+#contact-container a.modal-close,
+#contact-container a.modal-close:link,
+#contact-container a.modal-close:active,
+#contact-container a.modal-close:visited {
+  color: #999;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  text-decoration: none;
+  right: 8px;
+  top: 0px;
+}
+
+#contact-container a.modal-close:hover {
+  color: #ccc;
+}

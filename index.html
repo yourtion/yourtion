@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Yourtion个人网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="index/css/style.css" type="text/css" media="screen"/>
+<script type='text/javascript' src='index/js/jquery.js'></script>
+<script type='text/javascript' src='index/js/contact.js'></script>
+<meta name="robots" content="index,follow" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+</head>
+<body>
+<div id="loading">
+  <div></div>
+</div>
+<script type="text/javascript">
+$("#loading div").animate({width:"20px"})
+</script>
+<div id="content">
+  <div class="title"></div>
+  <div class="navigation" id="nav">
+    <div class="item user"> <img src="index/images/bg_user.png" alt="" width="199" height="199" class="circle"/> <a href="http://blog.yourtion.com/" class="icon"></a>
+      <h2 class="category">博客</h2>
+      <ul>
+        <li><a class="url" href="http://blog.yourtion.com/categories.html#iOS">iOS</a></li>
+        <li><a class="url" href="http://blog.yourtion.com/tags.html#WordPress">Wordpress</a></li>
+        <li><a class="url" href="http://blog.yourtion.com/categories.html">更多</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+$("#loading div").animate({width:"30px"})
+</script>
+    <div class="item home"> <img src="index/images/bg_home.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
+      <h2 class="category">社交</h2>
+      <ul>
+        <li><a class="url" href="http://weibo.com/yourtion/">微博</a></li>
+        <li><a class="url" href="http://twitter.com/yourtion/">Twitter</a></li>
+        <li><a class="url" href="http://facebook.com/yourtion/">FaceBook</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+$("#loading div").animate({width:"40px"})
+</script>
+    <div class="item shop"> <img src="index/images/bg_camera.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
+      <h2 class="category">项目</h2>
+      <ul>
+        <li><a class="url" href="https://www.gitbook.com/@yourtion">GitBook</a></li>
+        <li><a class="url" href="https://github.com/yourtion">GitHub</a></li>
+        <li><a class="url" href="http://superid.me">SuperID</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+$("#loading div").animate({width:"50px"})
+</script>
+    <div class="item camera"> <img src="index/images/bg_shop.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
+      <h2 class="category">作品</h2>
+      <ul>
+		    <li><a class="url" href="https://github.com/yourtion/SuperLogger">SuperLogger</a></li>
+        <li><a class="url" href="https://github.com/yourtion/EventLogger">EventLogger</a></li>
+        <li><a class="url" href="https://github.com/SuperID/CrashLogger">CrashLogger</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+$("#loading div").animate({width:"60px"})
+</script>
+    <div class="item fav"> <img src="index/images/bg_fav.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
+      <h2 class="category">联系</h2>
+      <ul>
+        <li><a class="url" href="http://me.yourtion.com">AboutMe</a></li>
+        <li><a class="url" href="http://blog.yourtion.com/about.html">MoreAbout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- The JavaScript -->
+<script type="text/javascript">
+$("#loading div").animate({width:"70px"})
+</script>
+<script type="text/javascript" src="index/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="index/js/jquery.simplemodal.js"></script>
+<script type="text/javascript">
+		$("#loading div").animate({width:"90px"})
+            $(function() {
+                $('#nav > div').hover(
+                function () {
+                    var $this = $(this);
+                    $this.find('img').stop().animate({
+                        'width'     :'199px',
+                        'height'    :'199px',
+                        'top'       :'-25px',
+                        'left'      :'-25px',
+                        'opacity'   :'1.0'
+                    },500,'easeOutBack',function(){
+                        $(this).parent().find('ul').fadeIn(700);
+                    });
+
+                    $this.find('a:first,h2').addClass('active');
+                },
+                function () {
+                    var $this = $(this);
+                    $this.find('ul').fadeOut(500);
+                    $this.find('img').stop().animate({
+                        'width'     :'52px',
+                        'height'    :'52px',
+                        'top'       :'0px',
+                        'left'      :'0px',
+                        'opacity'   :'0.1'
+                    },5000,'easeOutBack');
+
+                    $this.find('a:first,h2').removeClass('active');
+                }
+            );
+            });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12599330-8']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+$("#loading").fadeOut();
+</script>
+<p style="text-align: center; color: #DDD;"><a style="color: #DDD;" href="http://www.miibeian.gov.cn/">粤ICP备10014834号-1</a></p>
+</body>
+</html>
