@@ -1,132 +1,163 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-<title>Yourtion个人网</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" href="index/css/style.css" type="text/css" media="screen"/>
-<script type='text/javascript' src='index/js/jquery.js'></script>
-<script type='text/javascript' src='index/js/contact.js'></script>
-<meta name="robots" content="index,follow" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-</head>
-<body>
-<div id="loading">
-  <div></div>
-</div>
-<script type="text/javascript">
-$("#loading div").animate({width:"20px"})
-</script>
-<div id="content">
-  <div class="title"></div>
-  <div class="navigation" id="nav">
-    <div class="item user"> <img src="index/images/bg_user.png" alt="" width="199" height="199" class="circle"/> <a href="http://blog.yourtion.com/" class="icon"></a>
-      <h2 class="category">博客</h2>
-      <ul>
-        <li><a class="url" href="http://blog.yourtion.com/categories.html#iOS">iOS</a></li>
-        <li><a class="url" href="http://blog.yourtion.com/tags.html#WordPress">Wordpress</a></li>
-        <li><a class="url" href="http://blog.yourtion.com/categories.html">更多</a></li>
-      </ul>
+  <head>
+    <title>Yourtion</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="content">
+          <div class="inner">
+            <h1>Yourtion</h1>
+            <p>Impossible is nothing !</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <!-- <li><a href="#intro">
+				
+			</a></li> -->
+            <li>
+              <a target="_blank" href="https://blog.yourtion.com/">博客 </a>
+            </li>
+            <li><a href="#work">开源 </a></li>
+            <li><a href="#about">关于我 </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Intro -->
+        <article id="about">
+          <h2 class="major">关于我</h2>
+          <span class="image main"><img src="images/pic01.jpg" alt=""/></span>
+          <h3>性格</h3>
+          <p>
+            职业酱油僧，三分钟热度，喜欢各种新的事物，研究新技术，试用新产品。
+          </p>
+          <h3>癖好</h3>
+          <p>折腾各种玩意，拆解各种产品，将忽悠变成现实</p>
+          <h3>技能</h3>
+          <p>修各种各样的东西、iOS开发、服务器运维、写各种Demo、搞搞电子制作</p>
+        </article>
+
+        <!-- Work -->
+        <article id="work">
+          <h2 class="major">
+            开源项目
+            <a href="#" class="icon brands fa-github">
+              <span class="label">Github</span>
+            </a>
+          </h2>
+          <ul class="alt">
+            <li>
+              <a href="https://github.com/yourtion/SuperLogger">SuperLogger </a>
+              保存NSLog()到文件并发送邮件给开发者
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/EventLogger">EventLogger </a>
+              记录iOS事件数量和耗时
+            </li>
+            <li>
+              <a href="https://github.com/SuperID/CrashLogger">CrashLogger </a>
+              记录iOS崩溃日志
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/SurgeConfigGenerator">
+                SurgeConfigGenerator
+              </a>
+              Surge配置生成器
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/SimpleDeployer">
+                SimpleDeployer
+              </a>
+              WebHook快速部署项目
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/YXWaveView">YXWaveView</a>
+              类似百度外卖的头像波浪效果
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/node-qq-mta-sdk">
+                node-qq-mta-sdk
+              </a>
+              QQ MTA Node SDK
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/express-coroutine"
+                >express-coroutine
+              </a>
+
+              类似百度外卖的头像波浪效果
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/HTTPDNS-OC">HTTPDNS-OC</a>
+              HTTPDNS 库 Objdctive-C 实现
+            </li>
+            <li>
+              <a href="https://github.com/yourtion/HTTPDNS-Swift">
+                HTTPDNS-Swift
+              </a>
+              HTTPDNS 库 Swift 实现
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Yourtion 2020 -
+          <a target="_blank" href="http://www.miibeian.gov.cn/">
+            粤ICP备10014834号-1
+          </a>
+        </p>
+      </footer>
     </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
     <script type="text/javascript">
-$("#loading div").animate({width:"30px"})
-</script>
-    <div class="item home"> <img src="index/images/bg_home.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
-      <h2 class="category">社交</h2>
-      <ul>
-        <li><a class="url" href="http://weibo.com/yourtion/">微博</a></li>
-        <li><a class="url" href="http://twitter.com/yourtion/">Twitter</a></li>
-        <li><a class="url" href="http://facebook.com/yourtion/">FaceBook</a></li>
-      </ul>
-    </div>
-    <script type="text/javascript">
-$("#loading div").animate({width:"40px"})
-</script>
-    <div class="item shop"> <img src="index/images/bg_camera.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
-      <h2 class="category">项目</h2>
-      <ul>
-        <li><a class="url" href="https://www.gitbook.com/@yourtion">GitBook</a></li>
-        <li><a class="url" href="https://github.com/yourtion">GitHub</a></li>
-        <li><a class="url" href="http://superid.me">SuperID</a></li>
-      </ul>
-    </div>
-    <script type="text/javascript">
-$("#loading div").animate({width:"50px"})
-</script>
-    <div class="item camera"> <img src="index/images/bg_shop.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
-      <h2 class="category">作品</h2>
-      <ul>
-		    <li><a class="url" href="https://github.com/yourtion/SuperLogger">SuperLogger</a></li>
-        <li><a class="url" href="https://github.com/yourtion/EventLogger">EventLogger</a></li>
-        <li><a class="url" href="https://github.com/SuperID/CrashLogger">CrashLogger</a></li>
-      </ul>
-    </div>
-    <script type="text/javascript">
-$("#loading div").animate({width:"60px"})
-</script>
-    <div class="item fav"> <img src="index/images/bg_fav.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
-      <h2 class="category">联系</h2>
-      <ul>
-        <li><a class="url" href="http://me.yourtion.com">AboutMe</a></li>
-        <li><a class="url" href="http://blog.yourtion.com/about.html">MoreAbout</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- The JavaScript -->
-<script type="text/javascript">
-$("#loading div").animate({width:"70px"})
-</script>
-<script type="text/javascript" src="index/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="index/js/jquery.simplemodal.js"></script>
-<script type="text/javascript">
-		$("#loading div").animate({width:"90px"})
-            $(function() {
-                $('#nav > div').hover(
-                function () {
-                    var $this = $(this);
-                    $this.find('img').stop().animate({
-                        'width'     :'199px',
-                        'height'    :'199px',
-                        'top'       :'-25px',
-                        'left'      :'-25px',
-                        'opacity'   :'1.0'
-                    },500,'easeOutBack',function(){
-                        $(this).parent().find('ul').fadeIn(700);
-                    });
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3bc8bb43d792ba4093c830d2930ecc1a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
 
-                    $this.find('a:first,h2').addClass('active');
-                },
-                function () {
-                    var $this = $(this);
-                    $this.find('ul').fadeOut(500);
-                    $this.find('img').stop().animate({
-                        'width'     :'52px',
-                        'height'    :'52px',
-                        'top'       :'0px',
-                        'left'      :'0px',
-                        'opacity'   :'0.1'
-                    },5000,'easeOutBack');
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12599330-8']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
 
-                    $this.find('a:first,h2').removeClass('active');
-                }
-            );
-            });
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-12599330-8']);
-  _gaq.push(['_setDomainName', 'none']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-$("#loading").fadeOut();
-</script>
-<p style="text-align: center; color: #DDD;"><a style="color: #DDD;" href="http://www.miibeian.gov.cn/">粤ICP备10014834号-1</a></p>
-</body>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>
