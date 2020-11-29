@@ -1,5 +1,3 @@
-### Hi there 👋
-
 <!--
 **yourtion/yourtion** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -14,3 +12,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourtion&show_icons=true&line_height=30&hide=issues,contribs&hide_border=true&hide_title=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourtion&layout=compact&hide_border=true&hide_title=true)
