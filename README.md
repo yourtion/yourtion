@@ -13,5 +13,15 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourtion&show_icons=true&line_height=30&hide=issues,contribs&hide_border=true&hide_title=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourtion&layout=compact&hide_border=true&hide_title=true)
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-one-bice.vercel.app/api?username=yourtion&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-one-bice.vercel.app/api?username=yourtion&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true">
+    <img height="180em" alt="GitHub Stats" src="https://github-readme-stats-one-bice.vercel.app/api?username=yourtion&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=yourtion&layout=compact&theme=tokyonight&hide_border=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=yourtion&layout=compact&theme=default&hide_border=true">
+    <img height="180em" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourtion&layout=compact&theme=default&hide_border=true"/>
+  </picture>
+</div>
